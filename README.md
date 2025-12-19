@@ -106,6 +106,7 @@ Before ETL, the dataset is **enriched to enhance analysis**:
 5. Index selected fields into **Elasticsearch**  
 
 ### MongoDB Document Example  
+'''json
 {
 "case_id": "1234567",
 "date": "2024-05-03T12:30:00",
@@ -119,6 +120,7 @@ Before ETL, the dataset is **enriched to enhance analysis**:
 "community_area": "43",
 "victims_count": 1
 }
+'''
 
 ---
 
