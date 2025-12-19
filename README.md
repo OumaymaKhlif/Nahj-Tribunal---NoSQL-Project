@@ -208,11 +208,17 @@ This deployment setup allows developers to **quickly start the entire stack** wi
 To start and run the **Nahj Tribunal Monitor** project, follow these steps:  
 
 1. **Start Elasticsearch and Kibana**
+```bash
 docker-compose up -d
+```
 2. **Run the ETL pipeline to load and enrich the crime data**
+```bash
 python etl_crimes.py
+```
 3. **Start the FastAPI backend**
+```bash
 uvicorn main:app --reload
+```
 
 After these steps, the backend API will be accessible at `http://localhost:8000` and Kibana at `http://localhost:5601`.  
 
