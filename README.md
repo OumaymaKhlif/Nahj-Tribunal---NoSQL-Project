@@ -1,3 +1,12 @@
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)](https://www.mongodb.com/)
+[![Elasticsearch](https://img.shields.io/badge/Elasticsearch-Search-orange)](https://www.elastic.co/elasticsearch/)
+[![Kibana](https://img.shields.io/badge/Kibana-Dashboard-blueviolet)](https://www.elastic.co/kibana/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-lightgrey)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-Frontend-61DAFB)](https://reactjs.org/)
+[![Docker](https://img.shields.io/badge/Docker-Container-blue)](https://www.docker.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
 # 🏙️ Nahj Tribunal Monitor  
 ### Urban Crime Analysis & Decision Support System  
 
