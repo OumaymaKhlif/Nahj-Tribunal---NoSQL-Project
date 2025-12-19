@@ -77,24 +77,6 @@ The overall project architecture:
 
 ---
 
-## 📐 Architecture Documentation
-
-**Directory:** `/docs/architecture/`  
-
-Contains:
-- System architecture diagram (PNG / PDF)
-- Data flow and ETL process description
-- Component interaction overview
-- Technology choice justification
-
-**Design Highlights:**
-- Separation of storage and search layers
-- Data enrichment before persistence
-- Independent visualization layer
-- Scalable and modular design
-
----
-
 ## 🧪 Data Enrichment & Feature Engineering
 
 Before ETL, the dataset is **enriched to enhance analysis**:
@@ -137,7 +119,7 @@ Before ETL, the dataset is **enriched to enhance analysis**:
   "district": "005",
   "community_area": "43",
   "victims_count": 1
-}
+}```
 ## 🔍 Elasticsearch Index Mapping
 
 ```json
@@ -152,7 +134,7 @@ Before ETL, the dataset is **enriched to enhance analysis**:
       "location": { "type": "geo_point" }
     }
   }
-}
+}```
 ## 📈 Kibana Dashboards
 
 The visualization layer provides interactive insights into urban crime patterns and includes:
