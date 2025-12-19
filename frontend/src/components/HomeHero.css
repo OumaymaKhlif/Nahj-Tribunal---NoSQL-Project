@@ -1,0 +1,144 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background: #07111f;
+  overflow: hidden;
+}
+
+/* Background */
+.hero-background img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(7, 17, 31, 0.85), rgba(7, 17, 31, 0.95));
+}
+
+/* Content container */
+.hero-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  padding: 140px 20px 60px;
+  text-align: center;
+}
+
+/* Title */
+.hero-title {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 800;
+  font-family: serif;
+}
+
+.hero-yellow {
+  color: #ffd658;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #d1d1d1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Search box */
+.search-box {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgba(20, 30, 50, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  background: rgba(7, 17, 31, 0.6);
+  padding: 12px 18px;
+  border-radius: 12px;
+  width: 260px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.search-field input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.search-field input::placeholder {
+  color: #bdbdbd;
+}
+
+.icon {
+  color: #999;
+}
+
+/* Button */
+.search-btn {
+  background: #ffd658;
+  color: #07111f;
+  font-weight: bold;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background: #ffdf75;
+}
+
+/* Stats */
+.stats-box {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: rgba(7, 17, 31, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+.stat-icon {
+  color: #ffd658;
+  margin-bottom: 10px;
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.stat-card p {
+  color: #c6c6c6;
+  font-size: 14px;
+}

@@ -1,0 +1,12 @@
+# Data files (DO NOT PUSH)
+data/*.csv
+data/*.json
+data/*.jsonl
+data/*.parquet
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env

@@ -1,0 +1,163 @@
+:root {
+  --csdark: #061227;
+  --csyellow: #ffd658;
+  --text-light: rgba(255,255,255,0.9);
+  --text-muted: #cccccc;
+  --bg-card: rgba(0,0,0,0.6);
+  --bg-footer: rgba(0,0,0,0.8);
+  --btn-yellow: #fbbd23;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--csdark);
+  color: var(--text-light);
+  min-height: 100vh;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #646cff;
+}
+a:hover { color: #535bf2; }
+
+header, footer { width: 100%; }
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+button:hover { opacity: 0.9; }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+  padding: 0.8rem 2rem;
+}
+.navbar a { margin-right: 1rem; color: var(--text-light); font-weight: 500; }
+.navbar a:hover { color: var(--btn-yellow); }
+.navbar .btn-explorer {
+  background-color: var(--btn-yellow);
+  color: black;
+  font-weight: bold;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text-light);
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  color: var(--btn-yellow);
+}
+
+/* Hero */
+.hero {
+  height: 480px;
+  background-image: url('/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4rem;
+}
+.hero h1 { font-size: 3rem; line-height: 1.1; }
+.hero p { margin-top: 1rem; font-size: 1.2rem; color: var(--text-muted); }
+.hero .search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.hero .search-bar input {
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: rgba(0,0,0,0.3);
+  color: var(--text-light);
+}
+.hero .search-bar button {
+  background-color: var(--btn-yellow);
+  color: black;
+  font-weight: bold;
+}
+
+/* Stats Cards */
+.stats-cards {
+  display: flex;
+  gap: 1rem;
+  margin-top: -2rem;
+  padding: 0 4rem;
+}
+.stats-card {
+  flex: 1;
+  background-color: var(--bg-card);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Tech Cards */
+.tech-cards {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.tech-card {
+  flex: 1;
+  background-color: var(--bg-card);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+/* Explorer page */
+.explorer-page {
+  padding: 2rem 4rem;
+}
+.explorer-page .search-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.explorer-page .search-filters input, 
+.explorer-page .search-filters select {
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: rgba(0,0,0,0.3);
+  color: var(--text-light);
+}
+.explorer-page .search-filters button {
+  background-color: var(--btn-yellow);
+  color: black;
+  font-weight: bold;
+}
+
+/* Crime Card */
+.crime-card {
+  background-color: var(--bg-card);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-footer);
+  color: var(--text-muted);
+  padding: 4rem 7rem;
+}
+footer h3 { margin: 0; margin-bottom: 0.5rem; }
